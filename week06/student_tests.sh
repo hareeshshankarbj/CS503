@@ -44,7 +44,7 @@ EOF
 
     # The shell stays alive (status 0), but we expect an error message
     [ "$status" -eq 0 ]
-    [[ "$output" == *"The command does not found"* ]]
+    [[ "$output" == *"Command not found"* ]]
 }
 
 @test "Empty or whitespace-only command produces warning" {
