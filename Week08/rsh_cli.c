@@ -59,7 +59,7 @@ int exec_remote_cmd_loop(char *address, int port)
     char send_buff[1024];
     char recv_buff[RDSH_COMM_BUFF_SZ];
     int bytes_sent, bytes_received;
-    int rc = OK;
+   
 
     while (1) {
         printf("rdsh> ");
