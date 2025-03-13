@@ -196,6 +196,7 @@ int process_cli_requests(int svr_socket) {
 }
 
 int start_server(char *ifaces, int port, int is_threaded) {
+    (void)is_threaded; 
     int svr_socket = boot_server(ifaces, port);
     if (svr_socket < 0)
         return svr_socket;
