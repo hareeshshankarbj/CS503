@@ -90,11 +90,7 @@ Built_In_Cmds exec_built_in_cmd(cmd_buff_t *cmd) {
         }
         return BI_EXECUTED;
     }
-    if (strcmp(cmd->argv[0], "dragon") == 0) {
-        print_dragon();
-        last_return_code = 0;
-        return BI_EXECUTED;
-    }
+    
     if (strcmp(cmd->argv[0], "rc") == 0) {
         printf("%d\n", last_return_code);
         last_return_code = 0;
